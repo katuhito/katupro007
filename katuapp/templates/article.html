@@ -1,4 +1,6 @@
-{% include 'header.html' %}
+{% extends 'base.html' %}
+{% block title %}{{ article.title }}{% endblock %}
+{% block content %}
 
 <article>
     <h2>{{ article.title }}</h2>
@@ -18,6 +20,6 @@
     <p><a href="/">トップページ</a></p>
 </article>
 
-{% include 'footer.html' %}
+{% endblock %}
 
 
